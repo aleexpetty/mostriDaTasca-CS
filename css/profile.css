@@ -1,0 +1,386 @@
+/* GET PROFILE */
+.getProfile {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#getProfileCard {
+    background-color: #B90036;
+    border: 2px solid white;
+    display: table-cell;
+}
+
+#editBtn {
+    float:right;
+    margin-right: 5%;
+    width: 7%;
+    height: auto;
+    top: 0;
+}
+
+#backBtn {
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.getProfileTitle {
+    margin-top: 5%;
+    border-bottom: 0 !important;
+    background-color: #B90036 !important;
+}
+
+.getProfileTitle h2 {
+    display: inline;
+    color: white;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#getProfileCardBody {
+    vertical-align: middle;
+}
+
+#getProfileImg {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#getProfileUsername {
+    color: white !important;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#profileLPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#profileLPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+#profileXPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#profileXPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+
+
+/* SET PROFILE */
+.setProfile {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#setProfileCard {
+    background-color: #B90036;
+    border: 2px solid white;
+    display: table-cell;
+}
+
+.setProfileTitle {
+    margin-top: 5%;
+    color:white;
+    border-bottom: 0 !important;
+    background-color: #B90036 !important;
+}
+
+.setProfileTitle h2 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#setProfileCardBody {
+    vertical-align: middle;
+    height: 100%;
+}
+
+#setProfileImg {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#setProfileCardBody p {
+    color: white !important;
+    margin-top: 5%;
+}
+
+#setProfileUsername {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 200px;
+	padding: 7px;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	background: transparent;
+	font: 20px 'Sarabun', sans-serif;
+    color:white;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#setProfileUsername::placeholder { 
+    color: white;
+    opacity: 1;
+}
+
+#btnSetProfile {
+    margin-bottom: 5%;
+}
+
+
+
+/* CHANGE DATA */
+.changeData {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#changeDataCard {
+    background-color: #0078A4;
+    border: 2px solid white;
+    display: table-cell;
+}
+
+.changeDataTitle {
+    margin-top: 5%;
+    color:white;
+    border-bottom: 0 !important;
+    background-color: #0078A4 !important;
+}
+
+.changeDataTitle h2{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.changeDataTitle img{
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+}
+
+#changeDataImg {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#changeDataCardBody p {
+    color: white !important;
+    margin-top: 5%;
+}
+
+#changeDataUsername
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 200px;
+	padding: 7px;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	background: transparent;
+	font: 20px 'Sarabun', sans-serif;
+    color:white;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#btnChangeData {
+    margin-bottom: 5%;
+}
+
+#btnChangeData {
+    background-color: #B90036 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 100px !important;
+}
+
+#btnSetProfile {
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 100px !important;
+}
+
+
+
+/* TABLET VERSION */
+@media screen and (max-width: 1100px) and (min-width: 650px) {
+    
+    /* GET PROFILE TABLET */
+    #editBtn {
+        float:right;
+        margin-right: 5%;
+        width: 5%;
+        height: auto;
+        top: 0;
+    }
+    
+    #backBtn {
+        width: 3%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    #getProfileCardBody {
+        margin-top: 15%;
+    }
+
+    #getProfileImg {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 5%;
+        float: left;
+    }
+    
+    #getProfileUsername {
+        color: white !important;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        float: right;
+        font-size: 35px;
+    }
+
+    #profileStatsTable {
+        float: right;
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    /* SET PROFILE TABLET */
+    #setProfileCardBody {
+        margin-top: 15%;
+    }
+
+    .setProfileImgContainer {
+        float: left;
+    }
+
+    #setProfileImg {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 5%;
+    }
+    
+    #setProfileCardBody p {
+        color: white !important;
+        margin-top: 5%;
+        font-weight: bold;
+    }
+
+    #setProfileUsername {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 230px;
+        padding: 7px;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        background: transparent;
+        font: 24px 'Sarabun', sans-serif;
+        color:white;
+        margin-top: 15%;
+        margin-bottom: 8%;
+    }
+    
+    #btnSetProfile {
+        margin-bottom: 5%;
+        width: 150px !important;
+    }
+
+    /* CHANGE DATA TABLET */
+    .changeDataTitle img{
+        width: 3%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    #changeDataCardBody {
+        margin-top: 15%;
+    }
+
+    .changeDataImgContainer {
+        float: left;
+    }
+    
+    #changeDataImg {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 5%;
+    }
+    
+    #changeDataCardBody p {
+        color: white !important;
+        margin-top: 5%;
+        font-weight: bold;
+    }
+
+    #changeDataUsername {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 230px;
+        padding: 7px;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        background: transparent;
+        font: 24px 'Sarabun', sans-serif;
+        color:white;
+        margin-top: 15%;
+        margin-bottom: 8%;
+    }
+    
+    #btnChangeData {
+        margin-bottom: 5%;
+        width: 150px !important;
+    }
+}

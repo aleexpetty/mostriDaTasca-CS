@@ -1,0 +1,388 @@
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#btnProfileMap {
+    width: 12%;
+    height: auto;
+    top: 70px;
+    left: 2%;
+    z-index: 50; 
+    position: absolute;
+}
+
+#btnRankingMap {
+    width: 12%;
+    height: auto;
+    left: 2%;
+    top: 1%;
+    z-index: 50; 
+    position: absolute;
+}
+
+#btnUserPosition {
+    background-color: #0078A4;
+    bottom: 35px; 
+    right: 10px; 
+    z-index: 50; 
+    position: absolute;
+    vertical-align:middle; 
+    text-align:center;
+}
+
+.mapboxgl-ctrl-geolocate {
+    background-color: #0078A4 !important;
+}
+
+.mdl-button.mdl-js-button.mdl-button--fab.mdl-button--colored {
+    background-color: #0078A4 !important;
+    bottom: 35px; 
+    z-index: 99; 
+}
+
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+.mapboxgl-ctrl-bottom-right>.mapboxgl-ctrl-attrib.mapboxgl-compact:after {
+    display: none !important;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    display: none !important;
+}
+
+.mapboxgl-ctrl-group button {
+    border: 2px solid black;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 10%;
+}
+
+.mapboxgl-ctrl-icon {
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-geolocate-active {
+    border: 2px solid black;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 10%;
+    background-color: yellow !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+    background-image: url("../lib/mdl/locationIconWhite.svg") !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate.mapboxgl-ctrl-geolocate-active .mapboxgl-ctrl-icon {
+    background-image: url("../lib/mdl/locationIconOrange.svg") !important;
+}
+
+.userStats {
+    background-color: #0078A4;
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 13%;
+    width: 28%;
+    z-index: 50;
+    right: 2%;
+    top: 1%;
+    position: absolute;
+}
+
+.userStats img {
+    height: 80%;
+    width: 80%;
+}
+
+.userStats label {
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.userStats .row {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+}
+
+.advMarker {
+    background-image: url('../img/marketing.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.monsterMarker {
+    background-image: url('../img/monster.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.candyMarker {
+    background-image: url('../img/candy.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.launcher {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-image: url('../img/splashscreen.png');
+    background-size: cover;
+}
+
+/* ADV POPUP */
+/* MAP OBJECT POPUP */
+.advPopup {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.advCard {
+    background-color: #B90036 !important;
+    border: 2px white solid;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#advName {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+#advText {
+    color: white;
+}
+
+#closeAdvPopup {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+}
+
+/* MAP OBJECT POPUP */
+.mapObjectPopup {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mapObjectCard {
+    background-color: #B90036 !important;
+    border: 2px white solid;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#mapObjectName {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+.mapObjectImg {
+    margin-bottom: 5%;
+    width: 150px;
+    height: 150px;
+}
+
+#mapObjectSize {
+    color: white;
+}
+
+#mapObjectInfo {
+    margin-bottom: 5%;
+    color: white;
+}
+
+#closeMapObjectPopup {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+}
+
+.fightEatBtn {
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+}
+
+#mapObjectDivider {
+    border: 1px solid white !important;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.distanceQueryImg {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: auto;
+}
+
+/* RISULTATI COMBATTIMENTO */
+.fightEatResult {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fightEatCard {
+    background-color: #B90036 !important;
+    border: 2px solid white !important;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.resultPopupImg {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 75%;
+    height: auto;
+}
+
+.resultText {
+    color:white;
+    margin-bottom: 5%;
+}
+
+#resultLPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#resultLPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+#resultXPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#resultXPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+#closeResultPopup {
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+    margin-bottom: 5%;
+}
+
+#closeMapObjectError {
+    background-color: #0078A4 !important;
+    color:white !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+    margin-bottom: 5%;
+}
+
+/* TABLET VERSION */
+@media screen and (max-width: 1100px) and (min-width: 650px) {
+    #btnProfileMap {
+        width: 8%;
+        height: auto;
+        top: 80px;
+        left: 2%;
+        z-index: 50; 
+        position: absolute;
+    }
+    
+    #btnRankingMap {
+        width: 8%;
+        height: auto;
+        left: 2%;
+        top: 1%;
+        z-index: 50; 
+        position: absolute;
+    }
+
+    .userStats img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .userStats label {
+        color: white;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .col {
+        padding-right: 0 !important;
+    }
+
+    .launcher {
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background-image: url('../img/splashscreen_tablet.png') !important;
+        background-size: cover;
+    }
+}

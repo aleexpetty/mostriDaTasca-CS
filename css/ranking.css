@@ -1,0 +1,168 @@
+.ranking {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#rankingCard {
+    background-color: #0078A4;
+    border: 2px solid white;
+    display: table-cell;
+}
+
+.rankingTitle {
+    margin-top: 5%;
+    border-bottom: 0 !important;
+    background-color: #0078A4 !important;
+}
+
+.rankingTitle img {
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.rankingTitle h2 {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 0;
+}
+
+#rankingList img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#rankingList h5 {
+    margin: 0;
+}
+
+#rankingList p {
+    margin-top:5px;
+}
+
+table, tr, td, th {
+    border: none !important;
+}
+
+tr {
+    color: white  !important;
+}
+
+#rankingList th {
+    padding-top: 5% !important;
+}
+
+#rankingList td:last-child {
+    color: yellow !important;
+    padding-top: 5% !important;
+}
+
+tr {
+    vertical-align : middle;
+}
+
+/* DETAIL VIEW */
+.detailView {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#detailViewCard {
+    background-color: #B90036;
+    border: 2px solid white;
+    display: table-cell;
+}
+
+#backBtn {
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.detailViewTitle {
+    margin-top: 5%;
+    border-bottom: 0 !important;
+    background-color: #B90036 !important;
+}
+
+.detailViewTitle h2 {
+    display: inline;
+    color: white;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#detailViewCardBody {
+    vertical-align: middle;
+}
+
+#detailViewImg {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#detailViewUsername {
+    color: white !important;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#detailViewLPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#detailViewLPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+#detailViewXPImg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#detailViewXPValue {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 8px;
+}
+
+/* TABLET VERSION */
+@media screen and (max-width: 1100px) and (min-width: 650px) {
+    .rankingTitle img {
+        width: 3%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    #rankingList th {
+        padding-top: 2% !important;
+    }
+
+    #rankingList td:last-child {
+        color: yellow !important;
+        padding-top: 2% !important;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' 'self'; script-src * 'unsafe-inline' 'unsafe-eval' blob:; img-src * 'self' data: blob:;"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/mdl/icon.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="lib/mdl/material.indigo-pink.min.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ranking.css"/>
+    <link href="lib/mapbox/mapbox-gl.css" rel="stylesheet" />
+    <link href="lib/androidtoast/android_toast.css" rel="stylesheet" />
+    <link href="/lib/fonts/fonts.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+      </style>
+    <title>Mostri da Tasca</title>
+</head>
+
+<body>
+    <div class="container-fluid" style="height: 100%;">
+
+        <img class="app launcher img-fluid" src="img/splashscreen.png"> 
+        
+        <div class="app setProfile" style="display: none;">
+            <div class="card" id="setProfileCard">
+                <div class="card-header text-center setProfileTitle">
+                    <h2>Imposta profilo</h2>
+                </div>
+                <div class="card-body text-center" id="setProfileCardBody">
+                    <div class='setProfileImgContainer'>
+                        <img id="setProfileImg" src="img/avatar.png" class="card-img-top">
+                        <p>Clicca sull'immagine per modificarla</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <input type="text" class="form-control" id="setProfileUsername" maxlength="15" placeholder="Username">
+                    </div>
+                    <div class="row justify-content-center">
+                        <button id="btnSetProfile" class="btn btn-warning btn-lg">Salva</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app getProfile" style="display: none;">
+            <div class="card" id="getProfileCard">
+                <div class="card-header  getProfileTitle">
+                    <img id="backBtn" src="img/back.png">
+                    <img id="editBtn" src="img/edit.png">
+                    <div class="text-center">
+                        <h2>Profilo</h2>
+                    </div>
+                </div>
+
+                <div class="card-body text-center" id="getProfileCardBody">                  
+                    <img id="getProfileImg" src="img/avatar.png" class="mx-auto d-block">                  
+                    <div class="row justify-content-center">
+                        <h3 id="getProfileUsername"></h3>
+                    </div>
+                    <table class="table table-sm" id="profileStatsTable">
+                        <tbody>
+                            <tr class='text-center'>
+                                <td>
+                                    <img id="profileLPImg" src="img/heart.png" >
+                                </td>
+                                <td style="float:left">
+                                    <h5 id="profileLPValue"></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img id="profileXPImg" src="img/star.png">
+                                </td>
+                                <td style="float:left">
+                                    <h5 id="profileXPValue"></h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>               
+            </div>
+        </div>
+        
+        <div class="app changeData" style="display: none;">
+            <div class="card" id="changeDataCard">
+                <div class="card-header changeDataTitle">
+                    <img id="backBtnToGetProfile" src="img/back.png">
+                    <div class="text-center">
+                        <h2>Modifica dati</h2>
+                    </div>
+                </div>
+            
+                <div class="card-body text-center" id="changeDataCardBody">
+                    <div class='changeDataImgContainer'>
+                        <img id="changeDataImg" src="img/avatar.png" class="card-img-top">
+                        <p>Clicca sull'immagine per modificarla</p>        
+                    </div>      
+                    <div class="row justify-content-center">
+                        <input type="text" class="form-control" id="changeDataUsername" maxlength="15">
+                    </div>
+                    <button id="btnChangeData" class="btn btn-warning btn-lg">Salva</button>
+                </div>
+            </div>
+        </div> 
+
+        <div id="map">
+            <img src="img/user.png" id="btnProfileMap">
+            <img src="img/ranking.png" id="btnRankingMap">
+
+            <div class="userStats">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col text-center">
+                        <img src="img/heart_maps.png">
+                    </div>
+                    <div class="col text-center">
+                        <label id="userStatsLP"></label>
+                    </div>              
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col text-center">
+                        <img src="img/star_maps.png">
+                    </div>
+                    <div class="col text-center">
+                        <label id="userStatsXP"></label>
+                    </div>     
+                </div>         
+            </div>
+        </div>
+
+        <div class="mapObjectPopup" style="display:none;">
+        </div>
+
+        <div class="advPopup" style="display: none;">
+        </div>
+
+        <div class="fightEatResult" style="display:none;">
+        </div>
+
+        <div class="app ranking" style="display:none">
+            <div class="card" id="rankingCard">
+                <div class="card-header rankingTitle">
+                    <img src="img/back.png">
+                    <div class="row justify-content-center">
+                        <h2>Classifica</h2>
+                    </div>
+                </div>
+                <div class="card-body text-center" id="rankingCardBody">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <tbody id="rankingList">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="lib/mapbox/mapbox-gl.js"></script>
+    <script src="lib/androidtoast/android_toast.js"></script>
+    <script src="lib/mdl/material.min.js"></script>  
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.0/math.min.js" integrity="sha256-v4EzcFR/sOSVpwhfWikw9bwkBQcQnbwtaLhHRSIEvHw=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
